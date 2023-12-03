@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- back  -->
+    <color name="side_menu_button_back">#FF0277BD</color>
+    <color name="side_menu_button_back_pressed">#FF01579B</color>
+
+    <!-- fore  -->
+    <color name="side_menu_button_fore">#FFB0BBC5</color>
+    <color name="side_menu_button_fore_pressed">#FF78909C</color>
+    <color name="side_menu_button_fore_clicked">#FFFFFFFF</color>
+</resources>

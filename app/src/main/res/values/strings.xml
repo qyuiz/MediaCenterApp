@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">MediaCenterApp</string>
+
+    <!-- SIDE MENU  -->
+    <string name="fm_radio">FM</string>
+    <string name="am_radio">AM</string>
+    <string name="bluetooth">Bluetooth</string>
+    <string name="usb">USB</string>
+    <string name="spotify">Spotify</string>
+    <string name="local_play">Local Play</string>
+</resources>

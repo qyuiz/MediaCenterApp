@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Left side menu -->
+    <!-- TODO:スクロールの矢印の実装   -->
+    <!-- https://android.keicode.com/basics/ui-custom-horizontalscrollview.php   -->
+    <ScrollView
+        android:id="@+id/menuScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true">
+
+        <!-- Your menu items go here -->
+        <LinearLayout
+            android:id="@+id/side_menu_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Menu item 1 -->
+            <com.example.mediacenterapp.SideMenuButton
+                android:id="@+id/fm_button_side_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/side_menu_button_shape"
+                app:backgroundTint="@null"
+                android:textColor="@color/side_menu_button_fore"
+                android:textSize="@dimen/side_menu_button_text_size"
+                android:text="@string/fm_radio" />
+
+
+            <!-- Menu item 2 -->
+            <com.example.mediacenterapp.SideMenuButton
+                android:id="@+id/am_button_side_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/side_menu_button_shape"
+                app:backgroundTint="@null"
+                android:textColor="@color/side_menu_button_fore"
+                android:textSize="@dimen/side_menu_button_text_size"
+                android:text="@string/am_radio"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Menu item 2 -->
+            <com.example.mediacenterapp.SideMenuButton
+                android:id="@+id/bluetooth_button_side_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/side_menu_button_shape"
+                app:backgroundTint="@null"
+                android:textColor="@color/side_menu_button_fore"
+                android:textSize="@dimen/side_menu_button_text_size"
+                android:text="@string/bluetooth"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Menu item 2 -->
+            <com.example.mediacenterapp.SideMenuButton
+                android:id="@+id/usb_button_side_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/side_menu_button_shape"
+                app:backgroundTint="@null"
+                android:textColor="@color/side_menu_button_fore"
+                android:textSize="@dimen/side_menu_button_text_size"
+                android:text="@string/usb"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Menu item 2 -->
+            <com.example.mediacenterapp.SideMenuButton
+                android:id="@+id/local_player_side_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/side_menu_button_shape"
+                app:backgroundTint="@null"
+                android:textColor="@color/side_menu_button_fore"
+                android:textSize="@dimen/side_menu_button_text_size"
+                android:text="@string/local_play"
+                android:layout_marginTop="2dp"/>
+
+            <!-- Add more menu items as needed -->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Right side content -->
+    <LinearLayout
+        android:id="@+id/contentFrame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/menuScrollView"
+        android:background="@color/side_menu_button_back"
+        android:orientation="horizontal">
+
+        <!-- Your initial content goes here -->
+
+    </LinearLayout>
+</RelativeLayout>
